@@ -36,3 +36,20 @@ function alterarStatusEmCartaz(id, filmes) {
 
 // console.log(alterarStatusEmCartaz(1, catalogoObj.data));
 // console.log(catalogoObj.data);
+
+function calcularDoisNumeros(calculador, num1, num2) {
+  if (num1 > 5) {
+    num1 = num1 + 2;
+  } else {
+    num1 = num1 + 5;
+  }
+  return calculador(num1, num2);
+}
+function somar(num1, num2) {
+  return num1 + num2;
+}
+function multiplicar(num1, num2) {
+  return num1 * num2;
+}
+const resultado = calcularDoisNumeros(multiplicar, 2, 4);
+// console.log(resultado);
